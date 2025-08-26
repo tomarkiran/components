@@ -4,6 +4,9 @@ import Message from './Components/Message'
 import Counter from './Components/Counter'
 import Button from './Components/Button'
 import Reusable from './Components/Reusable'
+import Parent from './Components/Parent'
+import ReusableBtn from './Components/ReusableBtn'
+
 
 function App() {
   
@@ -24,6 +27,12 @@ function App() {
 
               <Reusable title = "First Card" description="This is my First Card"/>
               <Reusable title =" Second Card" description ="This is my Second Card Containing a Footer" footer ="A new Property is added"/>
+
+              <Parent/>
+
+             <ReusableBtn label="Submit" style={{backgroundColor:"blue"}} onClick = {()=>console.log("Suubmitted")}/>
+              <ReusableBtn label = "Cancel" style={{backgroundColor:"red"}} onClick = {()=>console.log("Cancelled")}/>
+                <ReusableBtn label = "Learn More" style = {{backgroundColor:"green"}} onClick ={()=>console.log("Learning More...")}/>
 
       </div>
       
